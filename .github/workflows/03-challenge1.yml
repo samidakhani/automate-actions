@@ -1,0 +1,39 @@
+name: Challenge 1
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  ubuntudate:
+    name: Ubuntu Execution
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Print Date
+        run: date
+  windowsdate:
+    name: Windows Execution
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Print Date
+        run: Get-Date
+  macosdate:
+    name: Macos Execution
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Print Date
+        run: Get-Date
+  dependantdate:
+    name: Dependant Execution
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Print Date
+        run: Get-Date
