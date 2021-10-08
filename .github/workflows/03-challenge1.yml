@@ -29,7 +29,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Print Date
-        run: Get-Date
+        run: date
   dependantdate:
     name: Dependant Execution
     runs-on: ubuntu-latest
