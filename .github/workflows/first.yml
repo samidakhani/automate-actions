@@ -15,7 +15,7 @@ jobs:
         run: env | sort
   job2:
     name: Second job
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: Step 1
         uses: actions/checkout@v2
