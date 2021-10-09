@@ -1,13 +1,16 @@
 package org.automate.actions.automateactions;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
 
 @SpringBootApplication
 public class AutomateActionsApplication implements CommandLineRunner {
+
+	private static Logger logger = LoggerFactory.getLogger(AutomateActionsApplication.class);
 
 	public static void main(String[] args) {
 		SpringApplication application = new SpringApplication(AutomateActionsApplication.class);
@@ -17,7 +20,7 @@ public class AutomateActionsApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("This is an application for github actions.");
+		logger.info("This is an application for github actions.");
 	}
 
 }
