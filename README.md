@@ -23,6 +23,6 @@
    a. Default environment variables - GITHUB_WORKFLOW, GITHUB_ACTION, etc <br />
    b. Define environment variables - Use 'env' atribute @ workflow, job, step. <br />
    c. Acessing variables <br />
-   A. Shell variable syntax <br/> - bash - $VARIABLE_NAME <br /> - powershell - $Env:VARIABLE_NAME
+   A. Shell variable syntax <br/> - bash - $VARIABLE_NAME <br /> - powershell - $Env:VARIABLE_NAME <br />
    B. YAML variable syntax <br />
    ${{env.VARIABLE_NAME}}
