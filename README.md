@@ -2,7 +2,7 @@
 
 1. needs: (Specify the dependancy of a job on another)
 
-2. uses:
+2. uses: (Used to specify an action)
 
 - uses: ./.github/actions/my-action (Action from the same repo)
 - uses: user/repo@ref (Action from diffrent repo)
@@ -10,9 +10,19 @@
 - uses: docker://image:tag (Action from a docker image in Docker Hub)
 - uses: docker://host/image:tag (Action from a docker image in a docker repo)
 
-3. run:
+3. run: (Used to run a command)
 
 - run: (Run a single command)
 - run: | (Run multiple commands) <br/>
   Command 1 <br/>
   Command 2
+
+4. with: (Used to pass arguments to an action)
+
+5. Environment variables
+   a. Default environment variables - GITHUB_WORKFLOW, GITHUB_ACTION, etc
+   b. Define environment variables - Use 'env' atribute @ workflow, job, step.
+   c. Acessing variables
+   A. Shell variable syntax <br/> - bash - $VARIABLE_NAME <br /> - powershell - $Env:VARIABLE_NAME
+   B. YAML variable syntax <br />
+   ${{env.VARIABLE_NAME}}
