@@ -1,0 +1,22 @@
+name: 05-mergepullrequest
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: 01-Check out code
+        uses: actions/checkout@v2
+
+      - name: 02-Lint codebase
+        uses: github/super-linter@v4
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 03-Unit test
+        run: mvn clean test
