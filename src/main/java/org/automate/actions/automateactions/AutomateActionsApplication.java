@@ -22,7 +22,7 @@ public class AutomateActionsApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		logger.info("This is an application for github actions.");
 		logger.info("Initiating manual merge");
-		logger.info("Initiating linting on merge");
+		logger.info("Initiating linting on merge pull request");
 	}
 
 }
