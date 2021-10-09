@@ -21,6 +21,7 @@ public class AutomateActionsApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		logger.info("This is an application for github actions.");
+		logger.info("Initiating maual merge");
 	}
 
 }
