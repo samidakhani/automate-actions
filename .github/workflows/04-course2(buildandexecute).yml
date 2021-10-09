@@ -15,11 +15,11 @@ jobs:
       - name: Setup Java 8
         uses: actions/setup-java@v2
         with:
-          distribution: 'adopt-openj9'
+          distribution: 'temurin'
           java-version: '8'
           check-latest: true
 
-      - name: List files and java version
+      - name: List java and maven version
         run: |
-          ls -ltr
           java -version
+          mvn -v
