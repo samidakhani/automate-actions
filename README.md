@@ -12,7 +12,7 @@
 
 3. run:
 
-- run: (Run a sinle command)
-- run: | (Run multiple commands)
-  Command 1
+- run: (Run a single command)
+- run: | (Run multiple commands) <br/>
+  Command 1 <br/>
   Command 2
