@@ -21,7 +21,8 @@ public class AutomateActionsApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		logger.info("This is an application for github actions.");
-		logger.info("Initiating manual merge");
+		logger.info("Initiating manual pull request");
+		logger.info("Initiating automated pull request for linting");
 	}
 
 }
