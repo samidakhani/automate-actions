@@ -37,10 +37,10 @@ jobs:
 
       - name: 02-Auto approve
         uses: hmarr/auto-approve-action@v2
-          with:
-            github-token: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 03-Auto merge
         uses: managedkaos/merge-pull-request@v1.2
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
