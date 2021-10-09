@@ -4,6 +4,9 @@ on:
   push:
   workflow_dispatch:
 
+env:
+  FILE_NAME: automate-actions
+
 jobs:
   build:
     name: Build
@@ -23,3 +26,6 @@ jobs:
         run: |
           java -version
           mvn -v
+
+      - name: Build ${{ env.FILE_NAME }}
+        run: mvn clean install
