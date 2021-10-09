@@ -19,10 +19,10 @@
 
 4. with: (Used to pass arguments to an action)
 
-5. Environment variables
-   a. Default environment variables - GITHUB_WORKFLOW, GITHUB_ACTION, etc
-   b. Define environment variables - Use 'env' atribute @ workflow, job, step.
-   c. Acessing variables
+5. Environment variables <br />
+   a. Default environment variables - GITHUB_WORKFLOW, GITHUB_ACTION, etc <br />
+   b. Define environment variables - Use 'env' atribute @ workflow, job, step. <br />
+   c. Acessing variables <br />
    A. Shell variable syntax <br/> - bash - $VARIABLE_NAME <br /> - powershell - $Env:VARIABLE_NAME
    B. YAML variable syntax <br />
    ${{env.VARIABLE_NAME}}
