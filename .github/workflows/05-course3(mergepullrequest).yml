@@ -1,7 +1,6 @@
 name: 05-mergepullrequest
 
 on:
-  push:
   pull_request:
     branches: [main]
 
@@ -26,3 +25,22 @@ jobs:
 
       - name: 03-Unit test
         run: mvn clean test
+
+  merge:
+    name: Merge
+    if: github.actor == 'samidakhani'
+    needs: [lint]
+    runs-on: ubuntu-latest
+    steps:
+      - name: 01-Check out code
+        uses: actions/checkout@v2
+
+      - name: 02-Auto approve
+        uses: hmarr/auto-approve-action@v2
+          with:
+            github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 03-Auto merge
+        uses: managedkaos/merge-pull-request@v1.2
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
