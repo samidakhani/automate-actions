@@ -62,9 +62,6 @@ jobs:
         run: ls -ltr
         working-directory: ./artifacts
 
-      #- name: 05-Execute the artifact
-      #  run: java -jar ${{ env.FILE_NAME }}.jar
-      #  working-directory: ./artifacts
-
-      #- name: 06-Check outcome
-      #  run: curl http://localhost:8081/check?url=http://googgle.com
+      - name: 05-Execute the artifact
+        run: java -jar ${{ env.FILE_NAME }}.jar
+        working-directory: ./artifacts
