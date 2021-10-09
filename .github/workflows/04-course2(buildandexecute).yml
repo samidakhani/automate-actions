@@ -1,0 +1,16 @@
+name: 04-buildandexecute
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v1
+      - name: List files and java version
+        run: |
+          ls -ltr
+          java -version
