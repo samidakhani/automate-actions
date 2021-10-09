@@ -29,5 +29,12 @@
        ${{env.VARIABLE_NAME}}
 
 6. Secrets
+
    - They are defined in the repo settings
    - Accessed via ${{secrets.SECRET_NAME}}
+
+7. Artifacts
+   - actions/upload-artifact (Upload an artifact via workflow)
+   - actions/download-artifact (Download an artifact via workflow)
+   - Manual download <br /><br />
+     NOTE:Each job runs within its own virtual environment.
