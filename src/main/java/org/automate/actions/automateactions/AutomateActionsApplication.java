@@ -23,6 +23,7 @@ public class AutomateActionsApplication implements CommandLineRunner {
 		logger.info("This is an application for github actions.");
 		logger.info("Initiating manual pull request");
 		logger.info("Initiating automated approve and pull request");
+		logger.info("Initiating lint failure");
 	}
 
 }
