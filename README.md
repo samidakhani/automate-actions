@@ -1,3 +1,6 @@
+![example branch parameter](<https://github.com/samidakhani/automate-actions/actions/workflows/05-course3(mergepullrequest).yml/badge.svg>)
+![example branch parameter](<https://github.com/samidakhani/automate-actions/actions/workflows/06-course3(linting).yml/badge.svg>)
+
 # automate-actions
 
 1. Job Dependancy

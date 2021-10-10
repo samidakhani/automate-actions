@@ -1,4 +1,4 @@
-name: 05-linting
+name: 06-linting
 
 on:
   push:
