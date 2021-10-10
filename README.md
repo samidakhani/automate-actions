@@ -59,6 +59,6 @@
 6. git push origin --delete mergedemo - Delete a remote branch 'mergedemo'
 7. git merge mergedemo - Merge into current branch from branch 'mergedemo'
 8. git branch (-a|-r) - Display git bracnhes
-9. git add .
-   git commit -m "Commit message"
+9. git add . <br />
+   git commit -m "Commit message" <br />
    git push
