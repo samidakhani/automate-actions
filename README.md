@@ -1,5 +1,5 @@
-![example branch parameter](<https://github.com/samidakhani/automate-actions/actions/workflows/04-course2(buildandexecute).yml/badge.svg>) <br />
-![example branch parameter](<https://github.com/samidakhani/automate-actions/actions/workflows/06-course3(linting).yml/badge.svg>)
+![](<https://github.com/samidakhani/automate-actions/actions/workflows/04-course2(buildandexecute).yml/badge.svg>) <br />
+![](<https://github.com/samidakhani/automate-actions/actions/workflows/06-course3(linting).yml/badge.svg>)
 
 # automate-actions
 
