@@ -13,7 +13,7 @@ public class WebhookController {
     private static Logger logger = LoggerFactory.getLogger(WebhookController.class);
 
     @PostMapping("/payload")
-    public void logWebhook(@RequestBody String payload) {
+    public String logWebhook(@RequestBody String payload) {
         logger.info("Recieved data from github webhook");
 
         JSONObject webhookEvent = new JSONObject(payload);
@@ -22,6 +22,7 @@ public class WebhookController {
         String commiterId = committer.getString("username");
         logger.info("Head commiter: " + commiterId);
 
+        return "Verified user:" + commiterId;
     }
 
 }
