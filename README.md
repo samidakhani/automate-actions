@@ -48,3 +48,17 @@
    - actions/download-artifact (Download an artifact via workflow)
    - Manual download from the Github UI<br /><br />
      NOTE:Each job runs within its own virtual environment.
+
+# git commands
+
+1. git branch mergedemo main - Create a new branch 'mergedemo' out of 'main'
+2. git checkout -b mergedemo - Create a new branch 'mergedemo' out of 'main'
+3. git checkout mergedemo - Switch to branch 'mergedemo'
+4. git push --force origin mergedemo - Push a newly created local branch to remote branch 'mergedemo'.
+5. git branch -d mergedemo - Delete a local branch 'mergedemo'
+6. git push origin --delete mergedemo - Delete a remote branch 'mergedemo'
+7. git merge mergedemo - Merge into current branch from branch 'mergedemo'
+8. git branch (-a|-r) - Display git bracnhes
+9. git add .
+   git commit -m "Commit message"
+   git push

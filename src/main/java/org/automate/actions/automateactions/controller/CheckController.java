@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-//@RestController
+@RestController
 public class CheckController {
 
     private static final String CODE_SITEDOWN = "Site is down";
     private static final String CODE_SITEUP = "Site is up";
     private static final String CODE_INCORRECT_URL = "URL malformed";
 
-    // @GetMapping("/check")
+    @GetMapping("/check")
     public String checkSiteStatus(@RequestParam String url) {
         String siteStatus = CODE_SITEUP;
 

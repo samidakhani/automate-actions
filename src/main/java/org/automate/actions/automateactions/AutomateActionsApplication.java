@@ -14,7 +14,7 @@ public class AutomateActionsApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
 		SpringApplication application = new SpringApplication(AutomateActionsApplication.class);
-		application.setWebApplicationType(WebApplicationType.NONE);
+		// application.setWebApplicationType(WebApplicationType.NONE);
 		application.run(args);
 	}
 
