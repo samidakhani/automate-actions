@@ -24,6 +24,7 @@ public class AutomateActionsApplication implements CommandLineRunner {
 		logger.info("Initiating manual pull request");
 		logger.info("Initiating automated approve and pull request");
 		logger.info("Initiating lint failure");
+		logger.info("Creating a webhook commit");
 	}
 
 }
